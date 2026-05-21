@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Spinner Asesor -->
+    <Spinner
+        android:id="@+id/spAsesor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Spinner Tipo de Cita -->
+    <Spinner
+        android:id="@+id/spTipoCita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spAsesor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Spinner Hora -->
+    <Spinner
+        android:id="@+id/spHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spTipoCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Spinner Tipo de Vía -->
+    <Spinner
+        android:id="@+id/spTipoVia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EditText Nombre Calle -->
+    <EditText
+        android:id="@+id/etNombreCalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de calle / número"
+        android:background="@drawable/login_input"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/spTipoVia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EditText Ciudad / Pueblo -->
+    <EditText
+        android:id="@+id/etCiudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad / Pueblo"
+        android:background="@drawable/login_input"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etNombreCalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón Agregar -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C9A227"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etCiudad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- RecyclerView para mostrar citas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCitas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_card"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAgregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

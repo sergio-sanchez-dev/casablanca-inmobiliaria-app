@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ CONFIGURACIÓN INICIAL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1a237e"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pulsa el botón UNA SOLA VEZ para crear todos los usuarios de la app automáticamente."
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCrearUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR USUARIOS"
+        android:backgroundTint="#1a237e"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esperando...\n"
+            android:textSize="14sp"
+            android:textColor="#333"
+            android:fontFamily="monospace"
+            android:background="#FFFFFF"
+            android:padding="12dp"/>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuarios que se crearán:\nAdri · Alex · Javi · David → pass: casablanca123\nAdmin1 · Admin2 → pass: admin123456"
+        android:textSize="12sp"
+        android:textColor="#777"
+        android:gravity="center"
+        android:paddingTop="16dp"/>
+
+</LinearLayout>

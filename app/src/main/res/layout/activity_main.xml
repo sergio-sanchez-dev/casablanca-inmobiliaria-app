@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:background="@drawable/login_card"
+        android:elevation="8dp"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/log"/>
+
+        <TextView
+            android:text="CASA BLANCA INMOBILIARIA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#8B6B00"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="Usuario"
+            android:padding="12dp"
+            android:background="@drawable/login_input"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:drawableEnd="@drawable/ic_eye"
+            android:drawablePadding="10dp"
+            android:background="@drawable/login_input"/>
+
+
+        <CheckBox
+            android:id="@+id/checkRecordar"
+            android:text="Recordar contraseña"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:text="Entrar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C9A227"/>
+        <Button
+            android:id="@+id/btnProbarFirestore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Probar Firestore"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/txtCrearCuenta"
+            android:text="¿No tienes cuenta? Crear cuenta"
+            android:textColor="#1976D2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

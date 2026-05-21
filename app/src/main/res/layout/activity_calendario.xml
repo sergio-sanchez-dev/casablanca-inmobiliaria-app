@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALENDARIO DE CITAS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1a237e"
+        android:padding="12dp"
+        android:background="#FFFFFF"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Barra con fecha + botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E8EAF6"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tvFechaSeleccionada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Todas las citas"
+            android:textStyle="bold"
+            android:textColor="#1a237e"
+            android:gravity="center_vertical"/>
+
+        <!-- Botón estadísticas: solo visible para admin (se controla por código) -->
+        <Button
+            android:id="@+id/btnEstadisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊 Stats"
+            android:textSize="11sp"
+            android:backgroundTint="#FF6F00"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAgregarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Nueva cita"
+            android:textSize="12sp"
+            android:backgroundTint="#1a237e"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvEventos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:padding="8dp"/>
+
+</LinearLayout>
+
+

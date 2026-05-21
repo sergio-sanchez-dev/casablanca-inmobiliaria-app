@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollencargo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- ══════════════ CABECERA EMPRESA ══════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a237e"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SOLUCIONES VILLASAN S.L."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N.I.F. B75484741"
+                android:textColor="#C5CAE9"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avenida de Beleña Nº16 local 1 · Guadalajara · Telf.: 949410344"
+                android:textColor="#C5CAE9"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="casablancaaguasvivas@gmail.com · www.casablancainmobiliarias.com"
+                android:textColor="#C5CAE9"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- ══════════════ TÍTULO DOCUMENTO ══════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="NOTA DE ENCARGO DE COMPRAVENTA DE INMUEBLE"
+            android:textColor="#1a237e"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="14dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#1a237e"/>
+
+        <!-- ══════════════ CONTENIDO PRINCIPAL ══════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <!-- ── SECCIÓN CLIENTE 1 ── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  CLIENTE 1 / PROPIETARIO"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="D./Dª. Nombre y Apellidos" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC1Nombre" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nombre completo"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Dirección" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC1Direccion" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Calle, nº, piso..."
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="D.N.I. / N.I.E." android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC1DNI" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nº documento"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"
+                android:inputType="textCapCharacters"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Teléfono 1" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etC1Telefono1" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Teléfono principal"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="phone"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Teléfono 2" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etC1Telefono2" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Teléfono secundario"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="phone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="E-mail" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC1Email" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="correo@ejemplo.com"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="16dp"
+                android:inputType="textEmailAddress"/>
+
+            <!-- ── SECCIÓN CLIENTE 2 ── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  CLIENTE 2 / COPROPIETARIO (OPCIONAL)"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="D./Dª. Nombre y Apellidos" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC2Nombre" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nombre completo"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Dirección" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC2Direccion" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Calle, nº, piso..."
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="D.N.I. / N.I.E." android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC2DNI" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nº documento"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"
+                android:inputType="textCapCharacters"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Teléfono 1" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etC2Telefono1" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Teléfono principal"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="phone"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Teléfono 2" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etC2Telefono2" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Teléfono secundario"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="phone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="E-mail" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etC2Email" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="correo@ejemplo.com"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="16dp"
+                android:inputType="textEmailAddress"/>
+
+            <!-- ── CONDICIONES DEL ENCARGO ── -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  CONDICIONES DEL ENCARGO"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Dirección del inmueble" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etDireccionInmueble" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Dirección completa del inmueble"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Cargas / Gravámenes (cláusula 2)" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etCargas" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Libre de cargas / indicar si las hay"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:layout_marginBottom="10dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Precio de venta (€)" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etPrecio" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Importe en euros"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Honorarios (% + IVA)" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etHonorarios" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Ej: 3%"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Fecha inicio encargo" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etFechaInicio" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="dd/mm/aaaa"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="date"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Fecha fin encargo" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etFechaFin" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="dd/mm/aaaa"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="date"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Llaves en oficina -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8EAF6"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Llaves del inmueble en oficina (cláusula 13)"
+                    android:textSize="11sp"
+                    android:textColor="#1a237e"
+                    android:textStyle="bold"/>
+
+                <RadioGroup android:id="@+id/rgLlaves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rbLlavesSi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SÍ" android:checked="true"
+                        android:textColor="#1a237e" android:textStyle="bold"/>
+                    <RadioButton android:id="@+id/rbLlavesNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"
+                        android:layout_marginStart="16dp"
+                        android:textColor="#1a237e" android:textStyle="bold"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Cláusula 11 -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Cláusula 11 – Condiciones adicionales" android:textSize="10sp"
+                android:textColor="#555555" android:paddingBottom="2dp"/>
+            <EditText android:id="@+id/etClausula11" android:layout_width="match_parent"
+                android:layout_height="100dp" android:hint="Condiciones especiales pactadas entre las partes..."
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:gravity="top"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Lugar y fecha firma -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  LUGAR Y FECHA DE FIRMA"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="2" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Localidad" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etLocalidad" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Ciudad / municipio"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Día" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etFechaDia" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="dd"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="number" android:maxLength="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingEnd="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Mes" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etFechaMes" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="Mes en texto"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:paddingStart="4dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Año" android:textSize="10sp" android:textColor="#555555" android:paddingBottom="2dp"/>
+                    <EditText android:id="@+id/etFechaAnio" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:hint="aaaa"
+                        android:background="@drawable/edit_text_border"
+                        android:padding="10dp" android:inputType="number" android:maxLength="4"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════ SECCIÓN FIRMA ══════════════ -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  FIRMA DEL CLIENTE"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firme con el dedo en el recuadro:"
+                android:textSize="11sp"
+                android:textColor="#333333"
+                android:paddingBottom="6dp"/>
+
+            <!-- Canvas de firma -->
+            <com.example.https.SignatureView
+                android:id="@+id/signatureView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <Button android:id="@+id/btnBorrarFirma"
+                    android:layout_width="0dp" android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="BORRAR FIRMA"
+                    android:backgroundTint="#9E9E9E"
+                    android:textColor="#FFFFFF" android:textSize="11sp"
+                    android:layout_marginEnd="4dp"/>
+                <Button android:id="@+id/btnVerFirma"
+                    android:layout_width="0dp" android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="VISTA PREVIA"
+                    android:backgroundTint="#37474F"
+                    android:textColor="#FFFFFF" android:textSize="11sp"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Observaciones -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1a237e"
+                android:text="  OBSERVACIONES"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText android:id="@+id/etObservaciones" android:layout_width="match_parent"
+                android:layout_height="100dp" android:hint="Notas adicionales..."
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp" android:gravity="top"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- ══════════════ BOTONES ACCIÓN ══════════════ -->
+            <Button android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="GUARDAR ENCARGO"
+                android:backgroundTint="#1a237e"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button android:id="@+id/btnGuardarYPDF"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="GUARDAR Y GENERAR PDF"
+                android:backgroundTint="#283593"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- ══════════════ SECCIÓN LISTA (AÑADIDA) ══════════════ -->
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                android:background="#E0E0E0"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="ENCARGOS GUARDADOS" android:textColor="#999999"
+                android:textSize="10sp" android:paddingBottom="10dp"/>
+
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:scrollbars="none" android:paddingBottom="10dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button android:id="@+id/btnFiltroHoy"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="Hoy" android:textColor="#FFFFFF"
+                        android:background="@drawable/bg_tab_active" android:layout_marginEnd="6dp"/>
+                    <Button android:id="@+id/btnFiltroAyer"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="Ayer" android:textColor="#555555"
+                        android:background="@drawable/bg_tab_inactive" android:layout_marginEnd="6dp"/>
+                    <Button android:id="@+id/btnFiltroMes"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="Este mes" android:textColor="#555555"
+                        android:background="@drawable/bg_tab_inactive" android:layout_marginEnd="6dp"/>
+                    <Button android:id="@+id/btnFiltroTodas"
+                        android:layout_width="wrap_content" android:layout_height="32dp"
+                        android:text="Todos" android:textColor="#555555"
+                        android:background="@drawable/bg_tab_inactive"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Spinner android:id="@+id/spFiltroAsesor"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:visibility="gone" android:layout_marginBottom="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEncargos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:paddingBottom="24dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

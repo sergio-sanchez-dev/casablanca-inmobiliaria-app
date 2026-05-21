@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollContrato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROPUESTA DE CONTRATO DE COMPRAVENTA"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#1a237e"
+            android:paddingBottom="16dp"/>
+
+        <!-- ══ COMPRADOR / PROPONENTE ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="COMPRADOR / PROPONENTE" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etC1Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (C1)"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etC1NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / N.I.E. (C1)"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etC1Domicilio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Domicilio (C1)"
+            android:layout_marginBottom="12dp"/>
+        <EditText android:id="@+id/etC2Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (C2) — opcional"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etC2NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / N.I.E. (C2)"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etC2Domicilio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Domicilio (C2)"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ ACTUANDO ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ACTUANDO" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <CheckBox android:id="@+id/cbPropiaNombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="En su propio nombre y representación"
+            android:textSize="14sp" android:checked="true" android:layout_marginBottom="8dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="O en nombre y representación de (rellenar si actúa como representante):"
+            android:textSize="12sp" android:textColor="#555555" android:layout_marginBottom="6dp"/>
+
+        <EditText android:id="@+id/etRepNombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Nombre / Razón Social representada"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etRepDomicilio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Domicilio del representado"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etRepNIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / C.I.F. del representado"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etRepCalidad" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Calidad en que actúa (apoderado, administrador…)"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ PLAZO ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PLAZO DE COMPROMISO" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etPlazo" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Número de días de compromiso"
+            android:inputType="number" android:layout_marginBottom="16dp"/>
+
+        <!-- ══ VENDEDOR ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="VENDEDOR" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etV1Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (V1)"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etV1NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / C.I.F. (V1)"
+            android:layout_marginBottom="12dp"/>
+        <EditText android:id="@+id/etV2Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (V2) — opcional"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etV2NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / C.I.F. (V2)"
+            android:layout_marginBottom="12dp"/>
+        <EditText android:id="@+id/etV3Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (V3) — opcional"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etV3NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / C.I.F. (V3)"
+            android:layout_marginBottom="12dp"/>
+        <EditText android:id="@+id/etV4Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="D./Dª — Nombre y Apellidos (V4) — opcional"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etV4NIF" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="N.I.F. / C.I.F. (V4)"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ INMUEBLE ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="INMUEBLE" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etDireccion" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Dirección"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etRefCatastral" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Referencia catastral"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etOtros" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Otros"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ CONDICIONES ECONÓMICAS ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CONDICIONES ECONÓMICAS" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etPrecio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Precio total propuesto (€)"
+            android:inputType="numberDecimal" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etArras" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Importe arras / señal — a la firma del presente (€)"
+            android:inputType="numberDecimal" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etContratoPrivado" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Importe a firma contrato privado (€) — táchese si no hay"
+            android:inputType="numberDecimal" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etEscritura" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Importe a escritura pública (€)"
+            android:inputType="numberDecimal" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etCargas" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cargas exceptuadas (dejar vacío si ninguna)"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ FECHAS ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="FECHAS" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etFechaContratoPrivado" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Contrato privado antes del (dd/mm/aaaa)"
+            android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/etFechaEscritura" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Escritura pública antes del (dd/mm/aaaa)"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Lugar y fecha de firma del documento"
+            android:textSize="12sp" android:textColor="#555555" android:layout_marginBottom="6dp"/>
+
+        <EditText android:id="@+id/etLugar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Lugar de firma"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <EditText android:id="@+id/etFirmaDia" android:layout_width="0dp"
+                android:layout_weight="1" android:layout_height="wrap_content"
+                android:hint="Día" android:inputType="number" android:layout_marginEnd="6dp"/>
+            <EditText android:id="@+id/etFirmaMes" android:layout_width="0dp"
+                android:layout_weight="2" android:layout_height="wrap_content"
+                android:hint="Mes" android:layout_marginEnd="6dp"/>
+            <EditText android:id="@+id/etFirmaAnio" android:layout_width="0dp"
+                android:layout_weight="1" android:layout_height="wrap_content"
+                android:hint="Año" android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- ══ CLÁUSULA 10 ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CLÁUSULA ADICIONAL (10)" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etClausula10" android:layout_width="match_parent"
+            android:layout_height="80dp" android:hint="Texto libre — opcional"
+            android:gravity="top" android:layout_marginBottom="16dp"/>
+
+        <!-- ══ FIRMA DIGITAL ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="FIRMA DIGITAL" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <com.example.https.SignatureView
+            android:id="@+id/signatureView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <Button android:id="@+id/btnBorrarFirma" android:layout_width="0dp"
+                android:layout_weight="1" android:layout_height="44dp"
+                android:text="🗑 Borrar firma" android:backgroundTint="#FF5722"
+                android:textColor="#FFFFFF" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnVerFirma" android:layout_width="0dp"
+                android:layout_weight="1" android:layout_height="44dp"
+                android:text="✓ Ver firma" android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- ══ ESTADO ══ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ESTADO DEL EXPEDIENTE" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:background="#1a237e"
+            android:padding="8dp" android:layout_marginBottom="8dp"/>
+
+        <Spinner android:id="@+id/spEstado" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnGuardar" android:layout_width="match_parent"
+            android:layout_height="56dp" android:text="GUARDAR Y GENERAR PDF"
+            android:backgroundTint="#1a237e" android:textColor="#FFFFFF"
+            android:textStyle="bold" android:layout_marginBottom="24dp"/>
+
+        <!-- ══════════════════════════════════════════════ -->
+        <!-- SECCIÓN LISTA CONTRATOS                        -->
+        <!-- ══════════════════════════════════════════════ -->
+        <View android:layout_width="match_parent" android:layout_height="2dp"
+            android:background="#CCCCCC" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CONTRATOS GUARDADOS" android:textColor="#666666"
+            android:textSize="13sp" android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+        <HorizontalScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:scrollbars="none"
+            android:paddingBottom="10dp">
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <Button android:id="@+id/btnFiltroHoy" android:layout_width="wrap_content"
+                    android:layout_height="32dp" android:text="Hoy"
+                    android:textColor="#FFFFFF" android:backgroundTint="#1a237e"
+                    android:layout_marginEnd="6dp"/>
+                <Button android:id="@+id/btnFiltroAyer" android:layout_width="wrap_content"
+                    android:layout_height="32dp" android:text="Ayer"
+                    android:textColor="#555555" android:backgroundTint="#EEEEEE"
+                    android:layout_marginEnd="6dp"/>
+                <Button android:id="@+id/btnFiltroMes" android:layout_width="wrap_content"
+                    android:layout_height="32dp" android:text="Este mes"
+                    android:textColor="#555555" android:backgroundTint="#EEEEEE"
+                    android:layout_marginEnd="6dp"/>
+                <Button android:id="@+id/btnFiltroTodas" android:layout_width="wrap_content"
+                    android:layout_height="32dp" android:text="Todas"
+                    android:textColor="#555555" android:backgroundTint="#EEEEEE"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Spinner android:id="@+id/spFiltroAsesor" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVisitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

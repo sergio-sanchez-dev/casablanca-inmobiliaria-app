@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Asesor" android:textStyle="bold" android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spAsesorEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tipo de cita" android:textStyle="bold" android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spTipoCitaEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Hora" android:textStyle="bold" android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spHoraEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tipo de vía" android:textStyle="bold" android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spTipoViaEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Nombre de calle / número" android:textStyle="bold"
+            android:textColor="#1a237e" android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etNombreCalleEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Gran Vía 24"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Ciudad / Pueblo" android:textStyle="bold" android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etCiudadEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: Guadalajara"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Fecha * (pulsa para elegir)" android:textStyle="bold"
+            android:textColor="#1a237e" android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etFechaEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dd/MM/yyyy"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@android:drawable/edit_text"/>
+
+    </LinearLayout>
+</ScrollView>

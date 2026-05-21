@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="#1A000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Fila superior: título + botones acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvItemTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#1A1A1A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Título"/>
+
+            <!-- Botón editar -->
+            <ImageButton
+                android:id="@+id/btnItemEditar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_icon_blue"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="Editar"
+                android:layout_marginStart="6dp"
+                android:scaleType="centerInside"
+                android:padding="6dp"/>
+
+            <!-- Botón eliminar -->
+            <ImageButton
+                android:id="@+id/btnItemEliminar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_icon_red"
+                android:src="@android:drawable/ic_menu_delete"
+                android:contentDescription="Eliminar"
+                android:layout_marginStart="6dp"
+                android:scaleType="centerInside"
+                android:padding="6dp"/>
+        </LinearLayout>
+
+        <!-- Subtítulo (fecha, asesor, usuario...) -->
+        <TextView
+            android:id="@+id/tvItemSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Subtítulo"/>
+
+        <!-- Badge estado (resultado, estado, tipo...) -->
+        <TextView
+            android:id="@+id/tvItemEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_badge_hoy"
+            android:textColor="#1565C0"
+            android:visibility="gone"
+            android:text="estado"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

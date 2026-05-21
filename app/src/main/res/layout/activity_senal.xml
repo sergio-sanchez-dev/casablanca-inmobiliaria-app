@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollSenal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ══ SELECTOR DE TIPO ══ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIPO DE DOCUMENTO"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbRecibo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recibo de Señal"
+                android:checked="true"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rbDevolucion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Devolución de Señal"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+        <!-- ══ DATOS COMUNES ══ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS DE LA PERSONA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etNombreDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre y Apellidos (Dº/Dña.)"
+            android:inputType="textPersonName|textCapWords"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etDomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Domicilio"
+            android:inputType="textPostalAddress|textCapWords"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D.N.I. / N.I.E."
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ══ BLOQUE RECIBO ══ -->
+        <LinearLayout
+            android:id="@+id/layoutRecibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATOS DE LA SEÑAL"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#1a237e"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/etImporteEfectivo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Efectivo recibido (€)"
+                    android:inputType="numberDecimal"/>
+
+                <EditText
+                    android:id="@+id/etImporteTransferencia"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Transferencia pendiente (€)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPlazoHoras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plazo transferencia (horas)"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etCuentaBancaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cuenta bancaria IBAN destino"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INMUEBLE"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#1a237e"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etDireccionInmueble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección del inmueble"
+                android:inputType="textPostalAddress|textCapWords"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VENDEDOR"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#1a237e"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etVendedorNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del vendedor"
+                android:inputType="textPersonName|textCapWords"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OBSERVACIONES"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#1a237e"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Observaciones"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+        <!-- ══ BLOQUE DEVOLUCIÓN ══ -->
+        <LinearLayout
+            android:id="@+id/layoutDevolucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATOS DE LA DEVOLUCIÓN"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#1a237e"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etFechaDevolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de la devolución (ej: 07 de Noviembre de 2025)"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/etImporteEfectivoDiv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Efectivo devuelto (€)"
+                    android:inputType="numberDecimal"/>
+
+                <EditText
+                    android:id="@+id/etImporteTransDev"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Transferencia a devolver (€)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etPlazoTransDev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plazo para transferencia (horas)"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etCuentaDevolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cuenta bancaria IBAN del receptor"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etFechaSenal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha en que se entregó la señal (ej: 28 de Julio de 2025)"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etDireccionDev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección del inmueble al que corresponde la señal"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+        <!-- ══ LUGAR Y FECHA DE FIRMA ══ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LUGAR Y FECHA DE FIRMA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lugar de firma"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etFirmaDia"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Día"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText
+                android:id="@+id/etFirmaMes"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="Mes"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText
+                android:id="@+id/etFirmaAnio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Año"
+                android:inputType="number"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- ══ FIRMA DEL CLIENTE ══ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIRMA DEL CLIENTE"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firma del cliente:"
+            android:textStyle="bold"
+            android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+
+        <com.example.https.SignatureView
+            android:id="@+id/signatureView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnBorrarFirma"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Borrar firma"
+                android:backgroundTint="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnVerFirma"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Verificar firma"
+                android:backgroundTint="#455A64"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="GUARDAR Y GENERAR PDF"
+            android:backgroundTint="#1a237e"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ══════════════ SECCIÓN LISTA ══════════════ -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#E0E0E0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOCUMENTOS GUARDADOS"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:paddingBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFiltroHoy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Hoy"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_tab_active"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroAyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Ayer"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Este mes"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroTodas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Todos"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Spinner solo visible para admin -->
+        <Spinner
+            android:id="@+id/spFiltroAsesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSenales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

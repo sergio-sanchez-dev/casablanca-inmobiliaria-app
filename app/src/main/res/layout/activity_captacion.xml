@@ -1,0 +1,439 @@
+<ScrollView
+    android:id="@+id/scrollCaptacion"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ══ TÍTULO + FECHA ══════════════════════════════════════════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FICHA DE CAPTACIÓN"
+                android:textSize="18sp" android:textStyle="bold"
+                android:textColor="#1a237e" android:gravity="center"/>
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="FECHA " android:textStyle="bold" android:textSize="12sp"/>
+                <EditText android:id="@+id/etFechaDia" android:layout_width="36dp"
+                    android:layout_height="wrap_content" android:hint="DD"
+                    android:inputType="number" android:gravity="center"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <EditText android:id="@+id/etFechaMes" android:layout_width="36dp"
+                    android:layout_height="wrap_content" android:hint="MM"
+                    android:inputType="number" android:gravity="center"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <EditText android:id="@+id/etFechaAnio" android:layout_width="56dp"
+                    android:layout_height="wrap_content" android:hint="AAAA"
+                    android:inputType="number" android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ══ CONTACTO / PROPIETARIO 1 ════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CONTACTO / PROPIETARIO 1"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etP1Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Nombre y Apellidos"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etP1Domicilio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Domicilio"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etP1DNI" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="DNI/NIE"/>
+            <EditText android:id="@+id/etP1Telefono" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Teléfono" android:inputType="phone" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etP1Email" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="e-mail"
+            android:inputType="textEmailAddress" android:layout_marginBottom="12dp"/>
+
+        <!-- ══ PROPIETARIO 2 ════════════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PROPIETARIO 2"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etP2Nombre" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Nombre y Apellidos"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etP2Domicilio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Domicilio"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etP2DNI" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="DNI/NIE"/>
+            <EditText android:id="@+id/etP2Telefono" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Teléfono" android:inputType="phone" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etP2Email" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="e-mail"
+            android:inputType="textEmailAddress" android:layout_marginBottom="12dp"/>
+
+        <!-- ══ UBICACIÓN DEL INMUEBLE ════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="UBICACIÓN DEL INMUEBLE"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etDireccion" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Dirección"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <EditText android:id="@+id/etPoblacion" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="2" android:hint="Población"/>
+            <EditText android:id="@+id/etCP" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="CP" android:inputType="number" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- ══ CARACTERÍSTICAS ZONA ══════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CARACTERÍSTICAS ZONA"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etZona" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="ZONA" android:layout_marginBottom="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etTransportes" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Transportes"/>
+            <EditText android:id="@+id/etComercios" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Comercios" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etAparcamientos" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Aparcamientos"/>
+            <EditText android:id="@+id/etCentroSalud" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Centro de Salud" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etServicios" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Servicios" android:layout_marginBottom="12dp"/>
+
+        <!-- ══ CARACTERÍSTICAS INMUEBLE ══════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="CARACTERÍSTICAS INMUEBLE"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etTipo" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="TIPO"/>
+            <EditText android:id="@+id/etOrientacion" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Orientación" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etSupUtil" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Superf. Útil" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etSupConstruida" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Superf. Construida" android:layout_marginStart="4dp" android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etDormitorios" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Dormitorios" android:inputType="number"/>
+            <EditText android:id="@+id/etBanos" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Baños" android:layout_marginStart="4dp" android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etGaraje" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Garaje"/>
+            <EditText android:id="@+id/etTrastero" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Trastero" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etCalefaccion" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Calefacción"/>
+            <EditText android:id="@+id/etAireAcondicionado" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Aire Acondicionado" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etSuelos" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Suelos"/>
+            <EditText android:id="@+id/etPuertas" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Puertas" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etVentanas" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Ventanas"/>
+            <EditText android:id="@+id/etParedes" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Paredes" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etCEE" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="C.E.E."/>
+            <EditText android:id="@+id/etLuzContrato" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Luz Contrato" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etAgua" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:hint="Agua"/>
+            <EditText android:id="@+id/etComunidad" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Comunidad" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etIBI" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="I.B.I." android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etHipoteca" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Hipoteca" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etAnioConstruccion" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Año construcción" android:inputType="number"/>
+            <EditText android:id="@+id/etAscensor" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="Ascensor" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etZonasComunes" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Zonas comunes"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ══ DISTRIBUCIÓN ══════════════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="DISTRIBUCIÓN"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <!-- Planta Baja -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PLANTA BAJA" android:textStyle="bold" android:textColor="#1a237e"
+            android:background="#E8EAF6" android:padding="6dp" android:layout_marginBottom="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etPlantaBajaM2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="m²" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etPlantaBajaDesc" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="3"
+                android:hint="Descripción estancias" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Primera Planta -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PRIMERA PLANTA" android:textStyle="bold" android:textColor="#1a237e"
+            android:background="#E8EAF6" android:padding="6dp" android:layout_marginBottom="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etPrimeraPlantaM2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="m²" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etPrimeraPlantaDesc" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="3"
+                android:hint="Descripción estancias" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Buhardilla -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="BUHARDILLA" android:textStyle="bold" android:textColor="#1a237e"
+            android:background="#E8EAF6" android:padding="6dp" android:layout_marginBottom="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etBuhardillaM2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="m²" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etBuhardillaDesc" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="3"
+                android:hint="Descripción estancias" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Planta Sótano -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PLANTA SÓTANO" android:textStyle="bold" android:textColor="#1a237e"
+            android:background="#E8EAF6" android:padding="6dp" android:layout_marginBottom="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <EditText android:id="@+id/etSotanoM2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="m²" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etSotanoDesc" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="3"
+                android:hint="Descripción estancias" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Patio -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="PATIO" android:textStyle="bold" android:textColor="#1a237e"
+            android:background="#E8EAF6" android:padding="6dp" android:layout_marginBottom="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <EditText android:id="@+id/etPatioM2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:hint="m²" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etPatioDesc" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="3"
+                android:hint="Descripción" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- ══ OTROS ════════════════════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="OTROS"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etMuebles" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="MUEBLES" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etMotivoVenta" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="MOTIVO DE VENTA" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etMotivoPrecio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="MOTIVO PRECIO" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etOtrasInmobiliarias" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="OTRAS INMOBILIARIAS" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etVisitas" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="VISITAS" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etOfertas" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="OFERTAS" android:layout_marginBottom="12dp"/>
+
+        <!-- ══ OBSERVACIONES ════════════════════════════════════════════════════ -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="OBSERVACIONES"
+            android:textStyle="bold" android:textColor="#FFFFFF"
+            android:background="#1a237e" android:padding="8dp" android:layout_marginBottom="4dp"/>
+
+        <EditText android:id="@+id/etObservaciones" android:layout_width="match_parent"
+            android:layout_height="120dp" android:hint="Observaciones"
+            android:gravity="top" android:layout_marginBottom="16dp"/>
+
+        <!-- ══ BOTÓN GUARDAR ════════════════════════════════════════════════════ -->
+        <Button android:id="@+id/btnGuardar" android:layout_width="match_parent"
+            android:layout_height="56dp" android:text="GUARDAR CAPTACIÓN"
+            android:backgroundTint="#1a237e" android:textColor="#FFFFFF"
+            android:textStyle="bold" android:layout_marginBottom="24dp"/>
+    <!-- ══ LISTA DE CAPTACIONES ═══════════════════════════════════════════════ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTA DE CAPTACIONES"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#1a237e"
+        android:padding="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Filtros -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnFiltroHoy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HOY"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnFiltroAyer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AYER"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnFiltroMes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MES"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnFiltroTodas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TODAS"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <!-- Spinner filtro asesor (solo admin) -->
+    <Spinner
+        android:id="@+id/spFiltroAsesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVisitas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

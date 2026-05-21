@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollVisitas"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- TÍTULO -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARTE DE VISITA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#1a237e"
+            android:paddingBottom="16dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- DATOS DEL CLIENTE -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS DEL CLIENTE"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etClienteNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D./Dña — Nombre y Apellidos"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etClienteDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="D.N.I. / N.I.E."
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etClienteTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etClienteEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- DATOS DE LA VISITA -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS DE LA VISITA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etAsesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Asesor que realiza la visita"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/etFecha"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Fecha"/>
+
+            <EditText android:id="@+id/etHora"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Hora"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etInmueble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inmueble visitado (dirección completa)"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etComentarios"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Comentarios"
+            android:gravity="top"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Resultado de la visita"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- EMPRESA -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMPRESA (si el cliente actúa en representación)"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etEmpresaCIF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CIF — opcional"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etEmpresaNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la empresa — opcional"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etEmpresaTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono empresa — opcional"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- HONORARIOS -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HONORARIOS (%)"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etHonorarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="% honorarios (por defecto 4)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- LUGAR Y FECHA -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LUGAR Y FECHA DE FIRMA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lugar"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText android:id="@+id/etFirmaDia"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Día"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText android:id="@+id/etFirmaMes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Mes"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText android:id="@+id/etFirmaAnio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Año"
+                android:gravity="center"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- PROTECCIÓN DE DATOS -->
+        <!-- ═══════════════════════════════════════════ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROTECCIÓN DE DATOS Y FIRMA"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#1a237e"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los datos de carácter personal facilitados serán incluidos en un fichero responsabilidad de SOLUCIONES VILLASAN S.L..."
+            android:textSize="11sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox android:id="@+id/checkTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acepto el tratamiento de mis datos personales"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btnFirmar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="✍️ FIRMAR"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firma del cliente:"
+            android:textStyle="bold"
+            android:textColor="#1a237e"
+            android:layout_marginBottom="4dp"/>
+
+        <com.example.https.SignatureView
+            android:id="@+id/signatureView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button android:id="@+id/btnBorrarFirma"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Borrar firma"
+                android:backgroundTint="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"/>
+
+            <Button android:id="@+id/btnVerFirma"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Verificar firma"
+                android:backgroundTint="#455A64"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="GUARDAR Y GENERAR PDF"
+            android:backgroundTint="#1a237e"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- SECCIÓN LISTA -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#E0E0E0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VISITAS GUARDADAS"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:paddingBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFiltroHoy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Hoy"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_tab_active"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroAyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Ayer"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Este mes"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"
+                    android:layout_marginEnd="6dp"/>
+
+                <Button
+                    android:id="@+id/btnFiltroTodas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Todas"
+                    android:textColor="#555555"
+                    android:background="@drawable/bg_tab_inactive"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Spinner
+            android:id="@+id/spFiltroAsesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/asesores_filtro"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVisitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

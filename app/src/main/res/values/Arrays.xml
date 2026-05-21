@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Guardar en res/values/arrays.xml -->
+<resources>
+    <string-array name="asesores_filtro">
+        <item>Todos</item>
+        <item>Adri</item>
+        <item>Alex</item>
+        <item>Javi</item>
+        <item>David</item>
+    </string-array>
+</resources>
