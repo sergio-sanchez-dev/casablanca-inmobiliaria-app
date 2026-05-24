@@ -31,11 +31,12 @@ Eliminación del 100% del papeleo manual en los procesos clave.
 El equipo comercial opera ahora completamente desde el móvil.
 
 ## Capturas
-[Añadir capturas de pantalla aquí]
-(foto1)
-(foto2)
-(foto3)
-(foto4)
-(foto5)
-(foto6)
-(foto7)
+
+(foto1.jgp)
+(foto2.jgp)
+(foto3.jgp)
+(foto4.jgp)
+(foto5.jgp)
+(foto6.jgp)
+(foto7.jgp)
+(foto8.jgp)
