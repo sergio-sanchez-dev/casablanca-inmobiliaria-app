@@ -32,3 +32,10 @@ El equipo comercial opera ahora completamente desde el móvil.
 
 ## Capturas
 [Añadir capturas de pantalla aquí]
+(foto1)
+(foto2)
+(foto3)
+(foto4)
+(foto5)
+(foto6)
+(foto7)
